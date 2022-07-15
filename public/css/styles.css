@@ -1,0 +1,26 @@
+body {
+
+    background-color: #29b90c;
+
+    background-image: url('https://images.pexels.com/photos/352505/pexels-photo-352505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: 1300px 800px;
+
+
+
+}
+
+.heading {
+
+    color: #1363DF;
+    font-family: 'Dancing Script',
+        cursive;
+    font-weight: bold;
+
+
+
+}
+
+form {
+    text-align: center;
+    margin: 60px auto 60px auto;
+}
