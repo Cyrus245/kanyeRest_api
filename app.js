@@ -6,6 +6,7 @@ const app = express();
 
 
 app.use(express.static("public"));
+app.set('view engine', 'ejs');
 
 
 app.get("/", (req, res) => {
@@ -30,8 +31,16 @@ app.post("/", (req, res) => {
             const qts = JSON.parse(data);
             const q = qts.quote;
 
-            res.write(`"${q}"`);
-            res.send();
+            // res.write(`"${q}"`);
+            // res.send();
+
+            var option = {
+
+                Joke: q,
+
+            }
+
+            res.render('quotes', option);
 
 
         })
